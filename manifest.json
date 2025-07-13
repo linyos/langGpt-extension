@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT 快速傳送",
+  "version": "1.0.0",
+  "description": "右鍵選取文字快速傳送至 ChatGPT",
+  "permissions": [
+    "scripting",
+    "contextMenus",
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://chat.openai.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ChatGPT 快速傳送"
+  },
+  "icons": {
+    "16": "icons/emoji.png",
+    "48": "icons/emoji.png",
+    "128": "icons/emoji.png"
+  }
+}
