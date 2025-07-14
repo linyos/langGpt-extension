@@ -24,7 +24,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
         
         // 開啟 ChatGPT 頁面
         chrome.tabs.create({
-          url: 'https://chat.openai.com/'
+           url: `https://chat.openai.com/#autoSubmit=1&prompt=${combinedMessage}`
         }, (newTab) => {
           if (chrome.runtime.lastError) {
             console.error('建立新分頁失敗:', chrome.runtime.lastError.message);
