@@ -27,8 +27,8 @@
     "default_title": "ChatGPT 快速傳送"
   },
   "icons": {
-    "16": "icons/emoji.png",
-    "48": "icons/emoji.png",
-    "128": "icons/emoji.png"
+    "16": "icons/languages.png",
+    "48": "icons/languages.png",
+    "128": "icons/languages.png"
   }
 }
